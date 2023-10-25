@@ -1,0 +1,14 @@
+.main-ad {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.ad {
+  width: 90%;
+  padding: 2rem 3rem;
+  border: 1px solid black;
+  font-size: 2rem;
+}

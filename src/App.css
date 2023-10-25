@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.45rem;
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 88, 116);
+    border-radius: 7px;
+}
+
+.header-title {
+  padding: 1.5rem 3rem;
+}

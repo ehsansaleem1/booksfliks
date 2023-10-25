@@ -1,0 +1,153 @@
+.front-section {
+    padding: 1.5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqNhPRhwKNLFXaX32E4HzvbGT0XAfX1oY8Q&usqp=CAU');
+}
+
+.main-post {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    padding: 0.5rem 4rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.5rem;
+  margin-left: 5rem;
+}
+
+.main-post:hover {
+    transform: scale(1.06);
+}
+
+.main-post>button {
+    margin-top: 5rem;
+    padding: 0.3rem 2rem;
+    background: rgb(255, 88, 116);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-post>h1 {
+    margin: 0.3rem 0;
+    color: white;
+}
+
+.date {
+    color: white;
+}
+
+.side-posts {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  margin-right: 3rem;
+  color: white;
+}
+
+.post>img {
+    border-radius: 8px;
+    height: 14rem;
+    width: 300px;
+}
+
+.text>h2 {
+    font-size: 0.75rem;
+  color: white;
+}
+
+.text>h3 {
+    font-size: 0.75rem;
+  color: white
+}
+
+.text>button {
+    display: inline-block;
+    padding: 0.125rem 0.125rem;
+    background: rgb(255, 88, 116);
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+}
+
+.contain>h2 {
+    font-size: 1.25rem;
+  color: white;
+}
+
+@media only screen and (max-width:600px) {
+  .front-section{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+  .main-post{
+    width: 100%;
+    padding: 3rem 0.5rem;
+    margin-left: 0;
+  }
+  .side-posts{
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .post>img{
+    width: 10rem;
+    height: 12.5rem;
+    margin-right: 1rem;
+  }
+
+  .main-post > h1 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+}
+
+
+  .spinner {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 2rem;
+    text-align: center;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+
+}
+
+.msg{
+  text-align: center;
+}

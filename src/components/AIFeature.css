@@ -1,0 +1,19 @@
+.msgbox {
+  width: 100%;
+  border: 1px solid black;
+  height: 30rem;
+}
+
+.text-inp {
+  height: 2.4rem;
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.submit-btn {
+  padding: 0.5rem 2rem;
+  width: 9%;
+  border: none;
+  background-color: rgb(255, 88, 116);
+  color: white;
+}
