@@ -13,7 +13,7 @@ export default function Reviews() {
   useEffect(() => {
     setTimeout(() => { 
         async function fetchData() {
-          let response = await fetch('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction?api-key=bYJYGVuFn5QZngjHtW35eYo8AAVZAPP6')
+          let response = await fetch('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction?api-key=API_KEY')
           let parsedData = await response.json()
           let books = parsedData.results.books
 
