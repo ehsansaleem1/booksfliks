@@ -19,7 +19,7 @@ export default function LatestCateg() {
   useEffect(() => {
     setTimeout(() => { 
         async function fetchData() {
-          let response = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/${newquery}?api-key=bYJYGVuFn5QZngjHtW35eYo8AAVZAPP6`)
+          let response = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/${newquery}?api-key=API_KEY`)
           let parsedData = await response.json()
           let books = parsedData.results
 
