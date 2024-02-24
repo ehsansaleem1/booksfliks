@@ -15,7 +15,7 @@ export default function Home() {
     useEffect(() => {
       setTimeout(() => { 
           async function fetchData() {
-            let response = await fetch('https://api.nytimes.com/svc/books/v3/lists/current/paperback-graphic-books?api-key==bYJYGVuFn5QZngjHtW35eYo8AAVZAPP6')
+            let response = await fetch('https://api.nytimes.com/svc/books/v3/lists/current/paperback-graphic-books?api-key=bYJYGVuFn5QZngjHtW35eYo8AAVZAPP6')
             let parsedData = await response.json()
             let books = parsedData.results.books
             console.log(books)
