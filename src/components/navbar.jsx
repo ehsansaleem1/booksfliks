@@ -10,7 +10,7 @@ export default function Nav() {
     <main>
       <div className="sidebar" style={open}>
         <h1 className="btn" onClick={() => setOpen({ left: "-30rem" })}>X</h1>
-        <h1 className="logo">Blogar</h1>
+        <h1 className="logo">BookFlix</h1>
         <ul className="links">
           <li className="link"><Link className='link-links' reloadDocument to='/'>Home</Link></li>
           <li className="link"><Link className='link-links'  reloadDocument to='/bestseller'>Bestseller</Link></li>
