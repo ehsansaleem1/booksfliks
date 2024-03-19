@@ -13,7 +13,7 @@ export default function Books() {
   useEffect(() => {
     setTimeout(() => { 
       async function fetchData() {
-        let response = await fetch('https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=bYJYGVuFn5QZngjHtW35eYo8AAVZAPP6')
+        let response = await fetch(`https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${process.env(API_KEY)}`)
         let parsedData = await response.json()
         let books = parsedData.results.lists
         let booksnew= books[0].books
